@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Exo+2&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@700&family=Outfit:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    
+}
+
+/* ## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+ */
+ :root{
+    --strong-cyan:hsl(171, 66%, 44%);
+    --light-blue:hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue:hsl(201, 11%, 66%);
+
+ }
+body{
+    background: url(bg-header-desktop.png);
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+}
+body header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86vh;
+
+}
+body .head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+}
+body header .head .mar{
+    margin: 15px 0;
+}
+body .h-color{
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+
+body header .head h1{
+    text-align: center;
+    font-size: 38px;
+   
+}
+body  .p-color{
+    color: var(--grayish-blue);
+    line-height: 25px;
+    
+}
+body header .head p{
+    text-align: center;
+  
+    font-size: 16px;
+}
+body header .head img{
+    width: 100px;
+}
+body  .head .btn button{
+    padding: 15px 32px;
+    border:none;
+    border-radius: 25px;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.4s ease;
+
+    
+}
+body  .head .btn button:hover{
+    opacity: 0.7;
+}
+body .head .btn .btn-1{
+    background-color: var(--strong-cyan);
+    margin-right: 13px;
+    border-bottom: 3px solid hsla(168, 87%, 22%, 0.26);
+    
+}
+body .head .btn .btn-2{
+    background-color: var(--light-blue);
+    
+    border-bottom: 3px solid hsla(233, 80%, 44%, 0.267);
+}
+
+main{
+    height: 120vh;
+   
+ 
+    
+}
+body main .head{
+    width: 100%;
+    margin: auto;
+}
+body main .head h1 , .p-color{
+    width: 600px;
+    text-align: center;
+    margin: 10px;
+    
+}
+body main .head p{
+    font-size: 14px;
+}
+
+body main .container{
+    width: 75%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 60px 0;
+    
+  
+}
+
+body main .container picture img{
+    width: 600px;
+}
+body main .container .infos{
+    width: 330px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+body main .container .infos div h4{
+    margin: 10px 0;
+    color: var(--dark-grayish-blue);
+}
+body main .container .infos div p{
+    font-size: 15px;
+    color: var(--grayish-blue);
+    line-height: 25px;
+
+}
+
+aside {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+aside picture img{
+    width: 800px;
+}
+
+.content{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+    
+}
+.content .head h1{
+    font-size: 33px;
+}
+.content .head p{
+    font-size: 16px;
+}
+.content .informations{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    
+}
+.content .informations .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+.content .informations .info p{
+   width: 300px;
+   font-size: 14px;
+   
+    
+}
+.content .informations .info h4{
+    margin: 10px 0;
+    margin-top: 40px;
+    font-weight: 600;
+}
+body .social{
+    height: 90vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-around;
+}
+.social .compans{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 100px;
+}
+body .social .head{
+    width: 100%;
+    margin: auto;
+}
+body .social .head h1{
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+body .social .head p{
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+body .foot{
+    height: 20vh;
+    background-color: rgba(34, 12, 12, 0.096);
+    padding-top: 30px;
+
+    
+}
+body .foot .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body .foot .container .left{
+    display: flex;
+    width: 45%;
+    justify-content:space-between;
+    align-items: center;
+}
+body .foot .container .left img{
+    width: 45px;
+}
+body .foot .container .left .options ul{
+   display: grid;
+   grid-template-columns: repeat(3,auto);
+   gap: 20px 50px;
+   
+}
+body .foot .container .left .options ul{
+    list-style: none;
+}
+body .foot .container .left .options ul a{
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 400;
+}
+body .foot .container .left .options ul a:hover{
+    color: var(--strong-cyan);
+}
+body .foot .container .apps img{
+    margin: 0 10px;
+   cursor: pointer;
+ 
+}
+
+@media (max-width:950px){
+    body{
+        display: grid;
+        place-content: center;
+        overflow: none;
+        margin-left: 170px;
+    }
+
+   
+    body header .head p{
+        width: 600px;
+        text-align: center;
+        word-wrap: break-word;
+        
+    }
+ 
+    body .head .btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body .head .btn button{
+       width: 300px;
+       margin: 10px 0;
+       padding: 20px 60px;
+       border-radius: 30px;
+        
+    }
+    body main .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        width: 100%;
+        margin: auto;
+    }
+    aside {
+        margin-top: 30px;
+        height: 70vh;
+    }
+    aside picture img{
+        width: 500px;
+    }
+    body main .container picture img{
+        width: 500px;
+    }
+
+    body main .container .infos div{
+        margin: 20px 0;
+    }
+    body main .container .infos div h4{
+        text-align: center;
+    }
+    body main .container .infos div p{
+        text-align: center;
+    }
+    body main .head{
+        margin: 30px 0;
+    }
+    body .social {
+        margin-bottom: 70px;
+    
+    }
+    body .social .compans{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:40px ;
+        
+    }
+    .social .compans img{
+        margin: 30px 0;
+    }
+    .content .informations{
+        display: flex;
+        flex-direction: column;
+    }
+    body .foot{
+        
+      height: 40vh;
+    
+    }
+    body .foot .container .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 80%;
+        
+
+    }
+    body .foot .container .left .options ul{
+        display: grid;
+        grid-template-columns: repeat(1,auto);
+    }
+    body .foot .container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    body .foot .container .apps img{
+        margin: 20px 20px;
+        width: 35px;
+    }
+    
+}
